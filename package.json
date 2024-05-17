@@ -1,0 +1,16 @@
+{
+  "name": "bun-faulty-webosckets",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.17.0"
+  }
+}
