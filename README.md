@@ -1,5 +1,8 @@
 # Bun's WebSockets does not send binary data over to server
 
+node v22.0.0
+bun 1.1.8
+
 I have a simple code in `ws.js`: connect to weboscket server and send over binary data from `audio.pcm` file in chunks.
 
 ```javascript
