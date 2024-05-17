@@ -3,14 +3,14 @@
 node v22.0.0
 bun 1.1.8
 
-I have a simple code in `ws.js`: connect to weboscket server and send over binary data from `audio.pcm` file in chunks.
+I have a simple code in `ws.js`: connect to weboscket server and send over binary data from `bun.lockb` file in chunks.
 
 ```javascript
 // ws.js
 
 import fs from "fs";
 
-const URL = "https://bun-faulty-ws.up.railway.app/";
+const URL = "https://bun-faulty-ws.up.railway.app/"; // or any other remote wss
 
 const ws = new WebSocket(URL);
 
@@ -28,7 +28,7 @@ ws.addEventListener("open", async () => {
   });
 
   // read from file and send to wss
-  const fileStream = fs.createReadStream("audio.pcm");
+  const fileStream = fs.createReadStream("bun.lockb");
 
   for await (const chunk of fileStream) {
     console.log("sending chunk of size", chunk.length);

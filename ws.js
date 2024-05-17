@@ -1,7 +1,6 @@
 import fs from "fs";
 
-// this is my deployed server url
-const URL = "https://bun-faulty-ws.up.railway.app/";
+const URL = "https://bun-faulty-ws.up.railway.app/"; // or any other remote wss
 
 const ws = new WebSocket(URL);
 
@@ -19,7 +18,7 @@ ws.addEventListener("open", async () => {
   });
 
   // read from file and send to wss
-  const fileStream = fs.createReadStream("audio.pcm");
+  const fileStream = fs.createReadStream("bun.lockb");
 
   for await (const chunk of fileStream) {
     console.log("sending chunk of size", chunk.length);
