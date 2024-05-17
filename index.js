@@ -1,6 +1,8 @@
 import { WebSocketServer } from "ws";
 
-const wss = new WebSocketServer({ port: 3000 });
+const wss = new WebSocketServer({
+  port: { port: Number(process.env.PORT ?? 3000) },
+});
 
 wss.on("connection", function (socket) {
   console.log("Client connected to the server.");
