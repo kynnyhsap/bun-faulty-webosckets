@@ -2,7 +2,7 @@
   "name": "bun-faulty-webosckets",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node wss.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
