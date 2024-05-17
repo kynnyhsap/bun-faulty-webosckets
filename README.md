@@ -1,4 +1,4 @@
-# Bun's WebSockets does not send binary data over to server
+# Bun WebSocket does not send binary data over to server
 
 node v22.0.0
 bun 1.1.8
